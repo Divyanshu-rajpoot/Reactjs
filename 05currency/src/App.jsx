@@ -34,7 +34,7 @@ function App() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              convert() //thios will call the function convert and will give the answer
+              convert() //this will call the function convert and will give the answer
             }}
           >
             <div className="w-full mb-1">
@@ -43,7 +43,7 @@ function App() {
                 amount={amount}
                 currencyOptions={options}
                 onCurrencyChange={(currency)=>{
-                  setamount(amount)
+                  setfrom(currency)
                 }}
                 selectCurrency={from}
                 onAmountChange={(amount) =>{
